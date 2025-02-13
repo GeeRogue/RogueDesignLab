@@ -1,0 +1,132 @@
+/* General Styles */
+body {
+    font-family: Calibri, sans-serif;
+    background-color: #FBFBFB;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #C5BAFF;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px;
+    background-color: #E8F9FF;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #C4D9FF;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    border: 1px solid #C4D9FF;
+    padding: 10px;
+    text-align: center;
+}
+
+.gumroad-button {
+    display: block;
+    background-color: #C5BAFF;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+/* Email Popup */
+.email-popup {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #FFF;
+    padding: 15px;
+    border: 1px solid #C4D9FF;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #C5BAFF;
+    color: #fff;
+}
+
+/*contact form*/
+
+body {
+    font-family: Calibri, sans-serif;
+    background-color: #FBFBFB;
+    color: #333;
+    padding: 20px;
+}
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #E8F9FF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    text-align: center;
+    color: #C5BAFF;
+}
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px;
+    border: 1px solid #C4D9FF;
+    border-radius: 4px;
+    font-size: 16px;
+}
+button {
+    padding: 10px 20px;
+    background-color: #C5BAFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover {
+    background-color: #B1A8FF;
+}

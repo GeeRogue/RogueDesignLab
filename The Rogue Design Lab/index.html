@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rogue Design Lab</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://gumroad.com/js/gumroad.js"></script>
+    <style>
+        body {
+            font-family: Calibri, sans-serif;
+            background-color: #FBFBFB;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #C5BAFF;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px;
+            background-color: #E8F9FF;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #C4D9FF;
+            color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .product {
+            border: 1px solid #C4D9FF;
+            padding: 10px;
+            text-align: center;
+        }
+        .gumroad-button {
+            display: block;
+            background-color: #C5BAFF;
+            color: #fff;
+            text-decoration: none;
+            padding: 8px;
+            border-radius: 4px;
+        }
+        .email-popup {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #FFF;
+            padding: 15px;
+            border: 1px solid #C4D9FF;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #C5BAFF;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+       
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+            </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="logo"> <img src="images/logo.png" alt="The Rogue Design Lab" height="100px" width="100px"></div>
+        <h1>Download Beautiful Templates Instantly</h1>
+        <a href="#shop" class="btn">Shop Now</a>
+    </section>
+
+    <!--About section-->
+    <section id="about" class="about">
+        <h2>About The Rogue Design Lab</h2>
+        <p>Welcome to The Rogue Design Lab! We create beautifully crafted digital downloads to make your life easier and more organized. Whether you're planning a wedding, tracking your finances, or looking for fun coloring books, we have something for you.</p>
+        <p>Our goal is to provide high-quality, stylish, and functional designs that you can download instantly. Explore our collections and find the perfect digital product for your needs.</p>
+    </section>
+  
+    <!-- Featured Products -->
+    <section id="shop" class="products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="images/product1.jpg" alt="Product 1">
+                <h3>Product Name</h3>
+                <p>Short description here</p>
+                <a class="gumroad-button" href="https://gumroad.com/l/example">Buy Now</a>
+            </div>
+            <div class="product">
+                <img src="images/product2.jpg" alt="Product 2">
+                <h3>Product Name</h3>
+                <p>Short description here</p>
+                <a class="gumroad-button" href="https://gumroad.com/l/example">Buy Now</a>
+            </div>
+            <!-- Add more products here -->
+        </div>
+    </section>
+
+    <section id="shop-categories" style="padding: 50px 0; background-color: #FBFBFB;">
+        <div class="container" style="text-align: center;">
+            <h2 style="font-family: Calibri, sans-serif; color: #C5BAFF;">Shop by Category</h2>
+            <div class="categories" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; max-width: 1200px; margin: 0 auto;">
+                
+                <!-- Weddings Category -->
+                <div class="category" style="border: 1px solid #C4D9FF; padding: 20px; background-color: #E8F9FF; border-radius: 8px;">
+                    <h3 style="font-family: Calibri, sans-serif; color: #C5BAFF;">Weddings</h3>
+                    <div class="products">
+                        <!-- Product 1 -->
+                        <div class="product-card" style="margin-bottom: 20px;">
+                            <img src="path_to_wedding_image_1.jpg" alt="Wedding Product 1" style="max-width: 100%; border-radius: 8px;">
+                            <h4 style="font-family: Calibri, sans-serif; color: #C5BAFF;">Wedding Template 1</h4>
+                            <p style="font-family: Calibri, sans-serif; color: #C5BAFF;">Elegant wedding invitation template.</p>
+                            <a href="https://gumroad.com/l/product-id-1" target="_blank">
+                                <button style="padding: 10px 20px; background-color: #C5BAFF; color: white; border: none; border-radius: 5px; cursor: pointer;">Buy Now</button>
+                            </a>
+                        </div>
+                        <!-- Product 2 -->
+                        <div class="product-card" style="margin-bottom: 20px;">
+                            <img src="path_to_wedding_image_2.jpg" alt="Wedding Product 2" style="max-width: 100%; border-radius: 8px;">
+                            <h4 style="font-family: Calibri, sans-serif; color: #C5BAFF;">Wedding Template 2</h4>
+                            <p style="font-family: Calibri, sans-serif; color: #C5BAFF;">A stylish save-the-date template.</p>
+                            <a href="https://gumroad.com/l/product-id-2" target="_blank">
+                                <button style="padding: 10px 20px; background-color: #C5BAFF; color: white; border: none; border-radius: 5px; cursor: pointer;">Buy Now</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Personal Finance Category -->
+                <div class="category" style="border: 1px solid #C4D9FF; padding: 20px; background-color: #E8F9FF; border-radius: 8px;">
+                    <h3 style="font-family: Calibri, sans-serif; color: #C5BAFF;">Personal Finance</h3>
+                    <div class="products">
+                        <!-- Product 1 -->
+                        <div class="product-card" style="margin-bottom: 20px;">
+                            <img src="path_to_finance_image_1.jpg" alt="Finance Product 1" style="max-width: 100%; border-radius: 8px;">
+                            <h4 style="font-family: Calibri, sans-serif; color: #C5BAFF;">Budgeting Planner</h4>
+                            <p style="font-family: Calibri, sans-serif; color: #C5BAFF;">Plan your monthly finances effectively.</p>
+                            <a href="https://gumroad.com/l/product-id-3" target="_blank">
+                                <button style="padding: 10px 20px; background-color: #C5BAFF; color: white; border: none; border-radius: 5px; cursor: pointer;">Buy Now</button>
+                            </a>
+                        </div>
+                        <!-- Product 2 -->
+                        <div class="product-card" style="margin-bottom: 20px;">
+                            <img src="path_to_finance_image_2.jpg" alt="Finance Product 2" style="max-width: 100%; border-radius: 8px;">
+                            <h4 style="font-family: Calibri, sans-serif; color: #C5BAFF;">Debt Reduction Plan</h4>
+                            <p style="font-family: Calibri, sans-serif; color: #C5BAFF;">A guide to help you pay off debt faster.</p>
+                            <a href="https://gumroad.com/l/product-id-4" target="_blank">
+                                <button style="padding: 10px 20px; background-color: #C5BAFF; color: white; border: none; border-radius: 5px; cursor: pointer;">Buy Now</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Babies and Parenting Category -->
+                <div class="category" style="border: 1px solid #C4D9FF; padding: 20px; background-color: #E8F9FF; border-radius: 8px;">
+                    <h3 style="font-family: Calibri, sans-serif; color: #C5BAFF;">Babies & Parenting</h3>
+                    <div class="products">
+                        <!-- Product 1 -->
+                        <div class="product-card" style="margin-bottom: 20px;">
+                            <img src="path_to_babies_image_1.jpg" alt="Parenting Product 1" style="max-width: 100%; border-radius: 8px;">
+                            <h4 style="font-family: Calibri, sans-serif; color: #C5BAFF;">Baby Sleep Tracker</h4>
+                            <p style="font-family: Calibri, sans-serif; color: #C5BAFF;">Track your baby's sleep patterns.</p>
+                            <a href="https://gumroad.com/l/product-id-5" target="_blank">
+                                <button style="padding: 10px 20px; background-color: #C5BAFF; color: white; border: none; border-radius: 5px; cursor: pointer;">Buy Now</button>
+                            </a>
+                        </div>
+                        <!-- Product 2 -->
+                        <div class="product-card" style="margin-bottom: 20px;">
+                            <img src="path_to_babies_image_2.jpg" alt="Parenting Product 2" style="max-width: 100%; border-radius: 8px;">
+                            <h4 style="font-family: Calibri, sans-serif; color: #C5BAFF;">Baby Feeding Log</h4>
+                            <p style="font-family: Calibri, sans-serif; color: #C5BAFF;">Keep track of your baby's feeding schedule.</p>
+                            <a href="https://gumroad.com/l/product-id-6" target="_blank">
+                                <button style="padding: 10px 20px; background-color: #C5BAFF; color: white; border: none; border-radius: 5px; cursor: pointer;">Buy Now</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Calendars Category -->
+                <div class="category" style="border: 1px solid #C4D9FF; padding: 20px; background-color: #E8F9FF; border-radius: 8px;">
+                    <h3 style="font-family: Calibri, sans-serif; color: #C5BAFF;">Calendars</h3>
+                    <div class="products">
+                        <!-- Product 1 -->
+                        <div class="product-card" style="margin-bottom: 20px;">
+                            <img src="path_to_calendars_image_1.jpg" alt="Calendar Product 1" style="max-width: 100%; border-radius: 8px;">
+                            <h4 style="font-family: Calibri, sans-serif; color: #C5BAFF;">Monthly Planner</h4>
+                            <p style="font-family: Calibri, sans-serif; color: #C5BAFF;">A simple and effective monthly planner.</p>
+                            <a href="https://gumroad.com/l/product-id-7" target="_blank">
+                                <button style="padding: 10px 20px; background-color: #C5BAFF; color: white; border: none; border-radius: 5px; cursor: pointer;">Buy Now</button>
+                            </a>
+                        </div>
+                        <!-- Product 2 -->
+                        <div class="product-card" style="margin-bottom: 20px;">
+                            <img src="path_to_calendars_image_2.jpg" alt="Calendar Product 2" style="max-width: 100%; border-radius: 8px;">
+                            <h4 style="font-family: Calibri, sans-serif; color: #C5BAFF;">Yearly Calendar</h4>
+                            <p style="font-family: Calibri, sans-serif; color: #C5BAFF;">Stay organized all year long with this calendar.</p>
+                            <a href="https://gumroad.com/l/product-id-8" target="_blank">
+                                <button style="padding: 10px 20px; background-color: #C5BAFF; color: white; border: none; border-radius: 5px; cursor: pointer;">Buy Now</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Colouring Books Category -->
+                <div class="category" style="border: 1px solid #C4D9FF; padding: 20px; background-color: #E8F9FF; border-radius: 8px;">
+                    <h3 style="font-family: Calibri, sans-serif; color: #C5BAFF;">Colouring Books</h3>
+                    <div class="products">
+                        <!-- Product 1 -->
+                        <div class="product-card" style="margin-bottom: 20px;">
+                            <img src="path_to_coloring_image_1.jpg" alt="Coloring Book 1" style="max-width: 100%; border-radius: 8px;">
+                            <h4 style="font-family: Calibri, sans-serif; color: #C5BAFF;">Floral Colouring Book</h4>
+                            <p style="font-family: Calibri, sans-serif; color: #C5BAFF;">Relax with beautiful floral designs.</p>
+                            <a href="https://gumroad.com/l/product-id-9" target="_blank">
+                                <button style="padding: 10px 20px; background-color: #C5BAFF; color: white; border: none; border-radius: 5px; cursor: pointer;">Buy Now</button>
+                            </a>
+                        </div>
+                        <!-- Product 2 -->
+                        <div class="product-card" style="margin-bottom: 20px;">
+                            <img src="path_to_coloring_image_2.jpg" alt="Coloring Book 2" style="max-width: 100%; border-radius: 8px;">
+                            <h4 style="font-family: Calibri, sans-serif; color: #C5BAFF;">Mandala Colouring Book</h4>
+                            <p style="font-family: Calibri, sans-serif; color: #C5BAFF;">Relaxing mandala patterns for coloring.</p>
+                            <a href="https://gumroad.com/l/product-id-10" target="_blank">
+                                <button style="padding: 10px 20px; background-color: #C5BAFF; color: white; border: none; border-radius: 5px; cursor: pointer;">Buy Now</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+    <!-- Email Signup Popup -->
+    <div class="email-popup" id="emailPopup">
+        <p>Sign up for exclusive deals & updates!</p>
+        <input type="email" placeholder="Enter your email">
+        <button>Subscribe</button>
+        <span class="close-popup" onclick="closePopup()">&times;</span>
+    </div>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <p>"These templates made my life so much easier!"</p>
+        <p>"Absolutely love the designs!"</p>
+    </section>
+
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="script.php" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 The Rogue Design Lab</p>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+    </footer>
+
+    <script>
+        function closePopup() {
+            document.getElementById("emailPopup").style.display = "none";
+        }
+        setTimeout(() => { document.getElementById("emailPopup").style.display = "block"; }, 3000);
+    </script>
+</body>
+</html>
